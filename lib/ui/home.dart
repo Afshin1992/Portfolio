@@ -300,7 +300,7 @@ Widget _buildSkillChip(
             ),
             SizedBox(width: 10.0),
             ButtonTheme(
-              buttonColor: Colors.red,
+              buttonColor: Colors.blueAccent,
               minWidth: 70.0,
               height: 10.0,
               child: RaisedButton(
