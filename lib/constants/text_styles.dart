@@ -4,21 +4,6 @@ import 'package:portfolio/constants/fonts.dart';
 class TextStyles {
   TextStyles._();
 
-  // static TextStyle get logo => TextStyle(
-  //       fontFamily: Fonts.product,
-  //       color: Colors.white,
-  //       fontSize: 22.0, //22.0
-  //       fontWeight: FontWeight.bold,
-  //       letterSpacing: 1.0,
-  //     );
-
-  // static TextStyle get menu_item => TextStyle(
-  //       fontFamily: Fonts.product,
-  //       fontSize: 12.0, //12,.0
-  //       letterSpacing: 1.0,
-  //       color: Color(0xFF45405B),
-  //     );
-
   static TextStyle get heading => TextStyle(
         fontFamily: Fonts.nexa_bold,
         color: Colors.white,

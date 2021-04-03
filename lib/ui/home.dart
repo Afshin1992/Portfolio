@@ -1,9 +1,9 @@
 import 'package:flutter_web/material.dart';
 import 'package:portfolio/constants/assets.dart';
 import 'package:portfolio/constants/fonts.dart';
-import 'package:portfolio/constants/strings.dart';
+
 import 'package:portfolio/constants/text_styles.dart';
-import 'package:portfolio/models/education.dart';
+
 import 'package:portfolio/utils/screen/screen_utils.dart';
 import 'package:portfolio/widgets/responsive_widget.dart';
 import 'dart:html' as html;
