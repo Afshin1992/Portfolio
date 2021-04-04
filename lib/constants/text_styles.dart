@@ -15,21 +15,21 @@ class TextStyles {
         fontFamily: Fonts.nexa_bold,
         color: Color(0xFF50AFC0),
         fontSize: 25.0, //45.0
-        fontWeight: FontWeight.w700,
+        fontWeight: FontWeight.w600,
         letterSpacing: 8.0,
       );
 
   static TextStyle get sub_heading => TextStyle(
         color: Colors.white,
         fontFamily: Fonts.product,
-        fontSize: 17.0, //17.0
+        fontSize: 18.0, //17.0
         letterSpacing: 1.2,
       );
 
   static TextStyle get company => TextStyle(
         fontFamily: Fonts.product,
         color: Color(0xFF45405B),
-        height: 1.5,
+        height: 1.7,
         fontSize: 15.0, //15.0
         letterSpacing: 1.0,
       );
@@ -37,7 +37,7 @@ class TextStyles {
   static TextStyle get body => TextStyle(
         fontFamily: Fonts.product,
         color: Colors.white,
-        height: 1.5,
+        height: 1.7,
         fontSize: 15.0, //12.0
         letterSpacing: 1.0,
       );

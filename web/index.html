@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <script defer src="main.dart.js" type="application/javascript">
-        jQuery(document).ready(function() {
+        jQuery(document).ready(function () {
             //Preloader
-            jQuery(window).on("load", function() {
-            preloaderFadeOutTime = 500;
-            function hidePreloader() {
-                var wrapper = jQuery('.spinner-wrapper');
-                var spinner = jQuery('.spinner');
-                wrapper.fadeOut(preloaderFadeOutTime);
-                spinner.fadeOut(preloaderFadeOutTime);
-            }
-            hidePreloader();
+            jQuery(window).on("load", function () {
+                preloaderFadeOutTime = 400;
+                function hidePreloader() {
+                    var wrapper = jQuery('.spinner-wrapper');
+                    var spinner = jQuery('.spinner');
+                    wrapper.fadeOut(preloaderFadeOutTime);
+                    spinner.fadeOut(preloaderFadeOutTime);
+                }
+                hidePreloader();
             });
         });
 
@@ -27,7 +28,9 @@
             top: 48%;
             left: 48%;
         }
-        .double-bounce1, .double-bounce2 {
+
+        .double-bounce1,
+        .double-bounce2 {
             width: 100%;
             height: 100%;
             border-radius: 50%;
@@ -47,28 +50,39 @@
         }
 
         @-webkit-keyframes sk-bounce {
-          0%, 100% { -webkit-transform: scale(0.0) }
-          50% { -webkit-transform: scale(1.0) }
+
+            0%,
+            100% {
+                -webkit-transform: scale(0.0)
+            }
+
+            50% {
+                -webkit-transform: scale(1.0)
+            }
         }
 
         @keyframes sk-bounce {
-          0%, 100% {
-            transform: scale(0.0);
-            -webkit-transform: scale(0.0);
-          } 50% {
-            transform: scale(1.0);
-            -webkit-transform: scale(1.0);
-          }
+
+            0%,
+            100% {
+                transform: scale(0.0);
+                -webkit-transform: scale(0.0);
+            }
+
+            50% {
+                transform: scale(1.0);
+                -webkit-transform: scale(1.0);
+            }
         }
-
-
     </style>
 </head>
+
 <body>
-<!--CSS Spinner-->
-<div class="spinner">
-    <div class="double-bounce1"></div>
-    <div class="double-bounce2"></div>
-</div>
+    <!--CSS Spinner-->
+    <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
 </body>
+
 </html>

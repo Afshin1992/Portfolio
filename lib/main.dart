@@ -8,16 +8,14 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          brightness: Brightness.light,
-          primaryColorBrightness: Brightness.light,
-          accentColorBrightness: Brightness.light
+        brightness: Brightness.light,
+        primaryColorBrightness: Brightness.light,
+        accentColorBrightness: Brightness.dark,
       ),
       home: MyAppChild(),
     );
@@ -25,7 +23,6 @@ class MyApp extends StatelessWidget {
 }
 
 class MyAppChild extends StatefulWidget {
-
   @override
   _MyAppChildState createState() => _MyAppChildState();
 }

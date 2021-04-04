@@ -181,12 +181,6 @@ class HomePage extends StatelessWidget {
   Widget _buildAboutMe(BuildContext context) {
     return RichText(
       text: TextSpan(
-        // Note: Styles for TextSpans must be explicitly defined.
-        // Child text spans will inherit styles from parent
-        // style: TextStyle(
-        //   fontSize: 48.0,
-        //   // color: Colors.red,
-        // ),
         children: <TextSpan>[
           TextSpan(
             text: 'Hello World, I am ',
@@ -209,7 +203,7 @@ class HomePage extends StatelessWidget {
 
   Widget _buildHeadline(BuildContext context) {
     return Text(
-      'Web And Mobile App Developer',
+      'Full Stack & Mobile App Developer',
       style: TextStyles.sub_heading,
     );
   }
