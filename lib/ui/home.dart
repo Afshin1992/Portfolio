@@ -478,6 +478,10 @@ Widget _buildProjectsChip(
       Center(
         child: Image.network(Assets.chak, width: 190.0, height: 200),
       ),
+      SizedBox(width: 15.0),
+      Center(
+        child: Image.network(Assets.chak, width: 190.0, height: 200),
+      ),
     ],
   );
 }
