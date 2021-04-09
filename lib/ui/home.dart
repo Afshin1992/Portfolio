@@ -471,18 +471,59 @@ Widget _buildProjects(BuildContext context) {
 Widget _buildProjectsChip(
   BuildContext context,
 ) {
-  return Row(
-    children: <Widget>[
-      Center(child: Image.network(Assets.vanco, width: 190.0, height: 200)),
-      SizedBox(width: 15.0),
-      Center(
-        child: Image.network(Assets.chak, width: 190.0, height: 200),
-      ),
-      SizedBox(width: 15.0),
-      Center(
-        child: Image.network(Assets.chak, width: 190.0, height: 200),
-      ),
-    ],
+  return Container(
+    child: Row(
+      children: <Widget>[
+        Column(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            GestureDetector(
+              onTap: () {
+                html.window.open(
+                    "https://www.linkedin.com/in/afshin-choganian/",
+                    "LinkedIn");
+              },
+              child: Image.network(Assets.vanco, width: 190.0, height: 200),
+            ),
+            // SizedBox(width: 10.0),
+            GestureDetector(
+              onTap: () {
+                html.window.open("https://github.com/afshin1992", "Github");
+              },
+              child: Image.network(Assets.chak, width: 190.0, height: 200),
+            ),
+          ],
+        ),
+        Column(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            GestureDetector(
+              onTap: () {
+                html.window.open(
+                    "https://www.linkedin.com/in/afshin-choganian/",
+                    "LinkedIn");
+              },
+              child: Image.network(Assets.vanco, width: 190.0, height: 200),
+            ),
+            GestureDetector(
+              onTap: () {
+                html.window.open("https://github.com/afshin1992", "Github");
+              },
+              child: Image.network(Assets.chak, width: 190.0, height: 200),
+            ),
+            // SizedBox(width: 10.0),
+            GestureDetector(
+              onTap: () {
+                html.window.open("https://github.com/afshin1992", "Github");
+              },
+              child: Image.network(Assets.chak, width: 190.0, height: 200),
+            ),
+          ],
+        ),
+      ],
+    ),
   );
 }
 
@@ -545,7 +586,7 @@ Widget _buildSocialIcons() {
           html.window.open("https://github.com/afshin1992", "Github");
         },
         child: Image.network(
-          Assets.google,
+          Assets.github,
           color: Color(0xFF45405B),
           height: 20.0,
           width: 20.0,
