@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
       color: Color(0xFF013a63),
       child: Padding(
         padding: EdgeInsets.symmetric(
-            horizontal: (ScreenUtil.getInstance().setWidth(108))), //144
+            horizontal: (ScreenUtil.getInstance().setWidth(108))),
         child: Scaffold(
           backgroundColor: Colors.transparent,
           appBar: _buildAppBar(context),
@@ -163,13 +163,11 @@ class HomePage extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  // _buildSkills(context),
-                  // SizedBox(height: 14.0),
-                  // _buildProjects(context),
                   _buildSkillChip(context),
                 ],
               )
             : _buildSkillsAndEducation(context),
+        SizedBox(height: 25),
         _buildProjects(context),
         SizedBox(height: ResponsiveWidget.isSmallScreen(context) ? 24.0 : 14.0),
         _buildProjectsChip(context),
@@ -402,62 +400,6 @@ Widget _buildSkillChip(
 
 // Education Methods:---------------------------------------------------------
 
-// Widget _buildEducation() {
-//   return Column(
-//     crossAxisAlignment: CrossAxisAlignment.start,
-//     children: <Widget>[
-//       _buildEducationContainerHeading(),
-//       _buildEducationSummary(),
-//       SizedBox(height: 8.0),
-//       _buildEducationTimeline(),
-//     ],
-//   );
-// }
-
-// Widget _buildEducationContainerHeading() {
-//   return Text(
-//     Strings.experience,
-//     style: TextStyles.sub_heading,
-//   );
-// }
-
-// Widget _buildEducationSummary() {
-//   return Text(
-//     'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-//     style: TextStyles.body,
-//   );
-// }
-
-// Widget _buildEducationTimeline() {
-//   final List<Widget> widgets =
-//       educationList.map((education) => _buildEducationTile(education)).toList();
-//   return Column(children: widgets);
-// }
-
-// Widget _buildEducationTile(Education education) {
-//   return Padding(
-//     padding: EdgeInsets.symmetric(vertical: 8.0),
-//     child: Column(
-//       crossAxisAlignment: CrossAxisAlignment.stretch,
-//       children: <Widget>[
-//         Text(
-//           '${education.post}',
-//           style: TextStyles.company,
-//         ),
-//         Text(
-//           '${education.organization}',
-//           style: TextStyles.body.copyWith(
-//             color: Color(0xFF45405B),
-//           ),
-//         ),
-//         Text(
-//           '${education.from}-${education.to}',
-//           style: TextStyles.body,
-//         ),
-//       ],
-//     ),
-//   );
-// }
 Widget _buildProjects(BuildContext context) {
   return RichText(
     text: TextSpan(
