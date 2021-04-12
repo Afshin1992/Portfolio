@@ -246,6 +246,7 @@ Widget _buildSkillChip(
         Row(
           children: <Widget>[
             ButtonTheme(
+              buttonColor: Colors.blue[400],
               minWidth: 90.0,
               height: 10.0,
               child: RaisedButton(
@@ -256,7 +257,7 @@ Widget _buildSkillChip(
             ),
             SizedBox(width: 10.0),
             ButtonTheme(
-              buttonColor: Color(0xFF013a80),
+              buttonColor: Colors.blue[400],
               minWidth: 90.0,
               height: 10.0,
               child: RaisedButton(
@@ -270,7 +271,7 @@ Widget _buildSkillChip(
         Row(
           children: <Widget>[
             ButtonTheme(
-              buttonColor: Color(0xFF013a80),
+              buttonColor: Colors.blue[500],
               minWidth: 90.0,
               height: 10.0,
               child: RaisedButton(
@@ -281,7 +282,7 @@ Widget _buildSkillChip(
             ),
             SizedBox(width: 10.0),
             ButtonTheme(
-              buttonColor: Color(0xFF023a90),
+              buttonColor: Colors.blue[500],
               minWidth: 70.0,
               height: 10.0,
               child: RaisedButton(
@@ -292,7 +293,7 @@ Widget _buildSkillChip(
             ),
             SizedBox(width: 10.0),
             ButtonTheme(
-              buttonColor: Colors.blueAccent,
+              buttonColor: Colors.blue[500],
               minWidth: 70.0,
               height: 10.0,
               child: RaisedButton(
@@ -306,6 +307,7 @@ Widget _buildSkillChip(
         Row(
           children: <Widget>[
             ButtonTheme(
+              buttonColor: Colors.blue[500],
               minWidth: 70.0,
               height: 10.0,
               child: RaisedButton(
@@ -316,6 +318,7 @@ Widget _buildSkillChip(
             ),
             SizedBox(width: 10.0),
             ButtonTheme(
+              buttonColor: Colors.blue[500],
               minWidth: 90.0,
               height: 10.0,
               child: RaisedButton(
@@ -326,7 +329,7 @@ Widget _buildSkillChip(
             ),
             SizedBox(width: 10.0),
             ButtonTheme(
-              buttonColor: Colors.red,
+              buttonColor: Colors.blue[500],
               minWidth: 70.0,
               height: 10.0,
               child: RaisedButton(
@@ -337,7 +340,7 @@ Widget _buildSkillChip(
             ),
             SizedBox(width: 10.0),
             ButtonTheme(
-              buttonColor: Colors.red,
+              buttonColor: Colors.blue[500],
               minWidth: 70.0,
               height: 10.0,
               child: RaisedButton(
@@ -351,6 +354,7 @@ Widget _buildSkillChip(
         Row(
           children: <Widget>[
             ButtonTheme(
+              buttonColor: Colors.blue[600],
               minWidth: 90.0,
               height: 10.0,
               child: RaisedButton(
@@ -361,6 +365,7 @@ Widget _buildSkillChip(
             ),
             SizedBox(width: 10.0),
             ButtonTheme(
+              buttonColor: Colors.blue[600],
               minWidth: 90.0,
               height: 10.0,
               child: RaisedButton(
@@ -371,7 +376,7 @@ Widget _buildSkillChip(
             ),
             SizedBox(width: 10.0),
             ButtonTheme(
-              buttonColor: Colors.red,
+              buttonColor: Colors.blue[600],
               minWidth: 70.0,
               height: 10.0,
               child: RaisedButton(
@@ -382,7 +387,7 @@ Widget _buildSkillChip(
             ),
             SizedBox(width: 10.0),
             ButtonTheme(
-              buttonColor: Colors.red,
+              buttonColor: Colors.blue[600],
               minWidth: 70.0,
               height: 10.0,
               child: RaisedButton(
@@ -414,51 +419,46 @@ Widget _buildProjectsChip(
   BuildContext context,
 ) {
   return Container(
-    child: Row(
+    child: Column(
       children: <Widget>[
-        Column(
-          mainAxisSize: MainAxisSize.max,
+        Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             GestureDetector(
               onTap: () {
-                html.window.open(
-                    "https://www.linkedin.com/in/afshin-choganian/",
-                    "LinkedIn");
+                html.window.open("https://youtu.be/FWPflzSKcI0", "YouTube");
               },
-              child: Image.network(Assets.vanco, width: 190.0, height: 200),
+              child: Image.network(Assets.skip, width: 130.0, height: 200),
             ),
             // SizedBox(width: 10.0),
             GestureDetector(
               onTap: () {
-                html.window.open("https://github.com/afshin1992", "Github");
+                html.window.open("https://youtu.be/9X3xZlenk-w", "YouTube");
               },
-              child: Image.network(Assets.chak, width: 190.0, height: 200),
+              child: Image.network(Assets.budget, width: 130.0, height: 200),
+            ),
+            GestureDetector(
+              onTap: () {
+                html.window.open("https://youtu.be/31G2XiN5Mrc", "YouTube");
+              },
+              child: Image.network(Assets.qweather, width: 130.0, height: 200),
             ),
           ],
         ),
-        Column(
+        Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             GestureDetector(
               onTap: () {
-                html.window.open(
-                    "https://www.linkedin.com/in/afshin-choganian/",
-                    "LinkedIn");
+                html.window.open("http://vancotravel.ca", "Website");
               },
               child: Image.network(Assets.vanco, width: 190.0, height: 200),
             ),
+            SizedBox(width: 20.0),
             GestureDetector(
               onTap: () {
-                html.window.open("https://github.com/afshin1992", "Github");
-              },
-              child: Image.network(Assets.chak, width: 190.0, height: 200),
-            ),
-            // SizedBox(width: 10.0),
-            GestureDetector(
-              onTap: () {
-                html.window.open("https://github.com/afshin1992", "Github");
+                html.window.open("https://youtu.be/V9Dkj-zTumU", "YouTube");
               },
               child: Image.network(Assets.chak, width: 190.0, height: 200),
             ),
