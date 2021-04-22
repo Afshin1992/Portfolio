@@ -446,24 +446,6 @@ Widget _buildProjectsChip(
           ],
         ),
         Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
-            GestureDetector(
-              onTap: () {
-                html.window.open("https://youtu.be/FWPflzSKcI0", "YouTube");
-              },
-              child: Image.network(Assets.skip, width: 130.0, height: 200),
-            ),
-            // SizedBox(width: 10.0),
-            GestureDetector(
-              onTap: () {
-                html.window.open("https://youtu.be/9X3xZlenk-w", "YouTube");
-              },
-              child: Image.network(Assets.budget, width: 130.0, height: 200),
-            ),
-          ],
-        ),
-        Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
