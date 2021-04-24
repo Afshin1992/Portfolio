@@ -30,8 +30,6 @@ class MyAppChild extends StatefulWidget {
 class _MyAppChildState extends State<MyAppChild> {
   @override
   Widget build(BuildContext context) {
-    // instantiating ScreenUtil singleton instance, as this will be used throughout
-    // the app to get screen size and other stuff
     ScreenUtil.instance = ScreenUtil.getInstance()..init(context);
     return HomePage();
   }

@@ -19,7 +19,6 @@ class HomePage extends StatelessWidget {
         child: Scaffold(
           backgroundColor: Colors.transparent,
           appBar: _buildAppBar(context),
-          drawer: _buildDrawer(context),
           body: LayoutBuilder(builder: (context, constraints) {
             return _buildBody(context, constraints);
           }),
@@ -28,11 +27,9 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  //AppBar Methods:-------------------------------------------------------------
+  //AppBar Function:-------------------------------------------------------------
   Widget _buildAppBar(BuildContext context) {
     return AppBar(
-      titleSpacing: 0.0,
-      // title: _buildTitle(),
       backgroundColor: Colors.transparent,
       elevation: 0.0,
       actions:
@@ -40,28 +37,11 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  // Widget _buildTitle() {
-  //   return Image(
-  //       image: NetworkImage(
-  //           'https://www.pngfind.com/pngs/m/496-4969711_aa-logo-png-letter-a-logo-png-transparent.png'));
-  // }
-
   List<Widget> _buildActions() {
     return null;
   }
 
-  Widget _buildDrawer(BuildContext context) {
-    return ResponsiveWidget.isSmallScreen(context)
-        ? Drawer(
-            child: ListView(
-              padding: const EdgeInsets.all(20),
-              // children: _buildActions(),
-            ),
-          )
-        : null;
-  }
-
-  //Screen Methods:-------------------------------------------------------------
+  //Screen Function:-------------------------------------------------------------
   Widget _buildBody(BuildContext context, BoxConstraints constraints) {
     return SingleChildScrollView(
       child: ConstrainedBox(
@@ -135,7 +115,7 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  // Body Methods:--------------------------------------------------------------
+  // Body Function:--------------------------------------------------------------
   Widget _buildIllustration() {
     return Image.network(
       Assets.programmer3,
@@ -222,10 +202,8 @@ class HomePage extends StatelessWidget {
       child: _buildSkillChip(context),
     );
   }
-
-  // Skills Methods:------------------------------------------------------------
-
 }
+// Skills Function:------------------------------------------------------------
 
 Widget _buildSkills(BuildContext context) {
   return RichText(
@@ -403,7 +381,7 @@ Widget _buildSkillChip(
   );
 }
 
-// Education Methods:---------------------------------------------------------
+// Education Function:---------------------------------------------------------
 
 Widget _buildProjects(BuildContext context) {
   return RichText(
@@ -430,7 +408,6 @@ Widget _buildProjectsChip(
               },
               child: Image.network(Assets.skip, width: 130.0, height: 200),
             ),
-            // SizedBox(width: 10.0),
             GestureDetector(
               onTap: () {
                 html.window.open("https://youtu.be/9X3xZlenk-w", "YouTube");
@@ -469,7 +446,7 @@ Widget _buildProjectsChip(
   );
 }
 
-// Footer Methods:------------------------------------------------------------
+// Footer Function:------------------------------------------------------------
 Widget _buildFooter(BuildContext context) {
   return Column(
     children: <Widget>[
