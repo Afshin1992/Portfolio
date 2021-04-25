@@ -474,7 +474,7 @@ Widget _buildFooter(BuildContext context) {
 
 Widget _buildCopyRightText(BuildContext context) {
   return Text(
-    '© 2021 ALL RIGHTS RESERVED.',
+    '© 2021.',
     style: TextStyles.body1.copyWith(
       fontSize: ResponsiveWidget.isSmallScreen(context) ? 8 : 10.0,
     ),
