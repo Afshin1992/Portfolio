@@ -430,17 +430,31 @@ Widget _buildProjectsChip(
               onTap: () {
                 html.window.open("http://vancotravel.ca", "Website");
               },
-              child: Image.network(Assets.vanco, width: 190.0, height: 200),
+              child: Image.network(Assets.qweather, width: 240.0, height: 200),
             ),
-            SizedBox(width: 20.0),
             GestureDetector(
               onTap: () {
                 html.window.open("https://youtu.be/V9Dkj-zTumU", "YouTube");
               },
-              child: Image.network(Assets.chak, width: 190.0, height: 200),
+              child: Image.network(Assets.qweather, width: 90.0, height: 200),
             ),
           ],
         ),
+        Padding(
+          padding: EdgeInsets.only(left: 100.0),
+          child: Row(
+            // mainAxisSize: MainAxisSize.max,
+            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              GestureDetector(
+                onTap: () {
+                  html.window.open("http://vancotravel.ca", "Website");
+                },
+                child: Image.network(Assets.vanco, width: 200.0, height: 140),
+              ),
+            ],
+          ),
+        )
       ],
     ),
   );
@@ -474,7 +488,7 @@ Widget _buildFooter(BuildContext context) {
 
 Widget _buildCopyRightText(BuildContext context) {
   return Text(
-    '© 2021.',
+    '©All right reserved 2021.',
     style: TextStyles.body1.copyWith(
       fontSize: ResponsiveWidget.isSmallScreen(context) ? 8 : 10.0,
     ),
